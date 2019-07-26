@@ -18,7 +18,6 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
-	"gopkg.in/telegram-bot-api.v4"
 	"gopkg.in/yaml.v2"
 
 	"html/template"
@@ -42,6 +41,7 @@ type Alert struct {
 	GeneratorURL string                 `json:"generatorURL"`
 	Labels       map[string]interface{} `json:"labels"`
 	StartsAt     string                 `json:"startsAt"`
+	Status       string                 `json:"Status"`
 }
 
 type Config struct {
